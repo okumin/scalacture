@@ -1,4 +1,4 @@
-package scalacture.immutable
+package scalacture.immutable.queue
 
 import scala.collection.generic.{CanBuildFrom, GenericCompanion, GenericTraversableTemplate, SeqFactory}
 import scala.collection.mutable.ListBuffer
@@ -40,7 +40,7 @@ import scala.collection.{GenTraversableOnce, mutable}
  *   </tr>
  * </table>
  */
-@SerialVersionUID(-2762853463771876323L)
+@SerialVersionUID(1382407360619706277L)
 final class BatchedQueue[+A] private (frontList: List[A], rearList: List[A])
   extends Queue[A]
   with QueueLike[A, BatchedQueue[A]]

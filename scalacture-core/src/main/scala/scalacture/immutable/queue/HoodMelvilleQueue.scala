@@ -1,9 +1,9 @@
-package scalacture.immutable
+package scalacture.immutable.queue
 
 import scala.collection.generic.{CanBuildFrom, GenericCompanion, GenericTraversableTemplate, SeqFactory}
 import scala.collection.mutable.ListBuffer
 import scala.collection.{GenTraversableOnce, mutable}
-import scalacture.immutable.HoodMelvilleQueue.{Appending, Done, Idle, Reversing, RotationState}
+import scalacture.immutable.queue.HoodMelvilleQueue.{Appending, Done, Idle, Reversing, RotationState}
 
 /**
  * A queue implemented by Hood and Melville.
@@ -40,7 +40,7 @@ import scalacture.immutable.HoodMelvilleQueue.{Appending, Done, Idle, Reversing,
  *   </tr>
  * </table>
  */
-@SerialVersionUID(-8158816613589059791L)
+@SerialVersionUID(1067800614785502062L)
 final class HoodMelvilleQueue[+A] private (diff: Int,
                                            working: List[A],
                                            state: RotationState[A],

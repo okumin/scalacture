@@ -1,4 +1,4 @@
-package scalacture.immutable
+package scalacture.immutable.queue
 
 import org.scalacheck.{Arbitrary, Gen}
 import scala.collection.generic.{CanBuildFrom, GenericTraversableTemplate, SeqFactory}

@@ -1,4 +1,4 @@
-package scalacture.immutable
+package scalacture.immutable.queue
 
 import scala.collection.generic.SeqFactory
 
