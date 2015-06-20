@@ -17,7 +17,7 @@ object Build extends Build {
       name := s"$project-core",
       libraryDependencies ++= Seq(
         "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.12.2" % "test"
+        "org.scalacheck" %% "scalacheck" % "1.12.4" % "test"
       )
     )
   )
