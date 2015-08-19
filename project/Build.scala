@@ -21,4 +21,12 @@ object Build extends Build {
       )
     )
   )
+
+  lazy val experimental = Project(
+    id = s"$project-experimental",
+    base = file(s"$project-experimental"),
+    settings = basicSettings ++ Seq(
+      name := s"$project-experimental"
+    )
+  )
 }
