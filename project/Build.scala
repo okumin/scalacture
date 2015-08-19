@@ -6,8 +6,8 @@ object Build extends Build {
 
   val basicSettings = Seq(
     version := "0.1",
-    scalaVersion := "2.11.6",
-    crossScalaVersions := Seq("2.10.5", "2.11.6")
+    scalaVersion := "2.11.7",
+    crossScalaVersions := Seq("2.10.5", "2.11.7")
   )
 
   lazy val core = Project(
