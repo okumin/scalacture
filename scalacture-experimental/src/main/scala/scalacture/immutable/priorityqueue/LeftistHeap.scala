@@ -29,6 +29,8 @@ sealed abstract class LeftistHeap[A: Ordering] {
 }
 
 object LeftistHeap {
+  def empty[A: Ordering]: LeftistHeap[A] = Leaf()
+
   private final case class Leaf[A: Ordering]() extends LeftistHeap[A] {
     override protected def rank: Int = 0
   }
