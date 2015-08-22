@@ -1,8 +1,8 @@
-package scalacture.immutable.priorityqueue
+package scalacture.experimental.immutable.priorityqueue
 
 import scala.Ordering.Implicits._
 import scala.annotation.tailrec
-import scalacture.immutable.priorityqueue.PairingHeap.{Branch, Leaf}
+import scalacture.experimental.immutable.priorityqueue.PairingHeap.{Branch, Leaf}
 
 sealed abstract class PairingHeap[A: Ordering] {
   final def findMin: A = this match {

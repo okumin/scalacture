@@ -1,4 +1,4 @@
-package scalacture.immutable.deque
+package scalacture.experimental.immutable.deque
 
 final class BatchedDeque[A] private (frontList: List[A], rearList: List[A]) {
   // Ensures that both front and rear are non-empty unless size <= 1.

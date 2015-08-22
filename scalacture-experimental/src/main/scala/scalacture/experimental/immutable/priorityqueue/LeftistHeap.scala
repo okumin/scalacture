@@ -1,7 +1,7 @@
-package scalacture.immutable.priorityqueue
+package scalacture.experimental.immutable.priorityqueue
 
 import scala.Ordering.Implicits._
-import scalacture.immutable.priorityqueue.LeftistHeap.{Branch, Leaf}
+import scalacture.experimental.immutable.priorityqueue.LeftistHeap.{Branch, Leaf}
 
 sealed abstract class LeftistHeap[A: Ordering] {
   protected def rank: Int
