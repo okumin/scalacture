@@ -1,5 +1,5 @@
-import sbt._
 import sbt.Keys._
+import sbt._
 
 object Build extends Build {
   val project = "scalacture"
@@ -28,5 +28,8 @@ object Build extends Build {
     settings = basicSettings ++ Seq(
       name := s"$project-experimental"
     )
+  ).dependsOn(
+    core,
+    core % "test->test"
   )
 }
