@@ -1,5 +1,6 @@
 import sbt.Keys._
 import sbt._
+import scalaprops.ScalapropsPlugin.autoImport._
 
 object Build extends Build {
   val project = "scalacture"
@@ -25,14 +26,11 @@ object Build extends Build {
   lazy val scalaz = Project(
     id = s"$project-scalaz",
     base = file(s"$project-scalaz"),
-    settings = basicSettings ++ Seq(
+    settings = basicSettings ++ scalapropsWithScalazlaws ++ Seq(
       name := s"$project-scalaz",
-      testFrameworks += new TestFramework("scalaprops.ScalapropsFramework"),
-      parallelExecution in Test := false,
+      scalapropsVersion := "0.1.13",
       libraryDependencies ++= Seq(
-        "org.scalaz" %% "scalaz-core" % "7.1.3",
-        "com.github.scalaprops" %% "scalaprops" % "0.1.13" % "test",
-        "com.github.scalaprops" %% "scalaprops-scalazlaws" % "0.1.13" % "test"
+        "org.scalaz" %% "scalaz-core" % "7.1.3"
       )
     )
   ).dependsOn(
