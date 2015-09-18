@@ -30,7 +30,7 @@ object Build extends Build {
       name := s"$project-scalaz",
       scalapropsVersion := "0.1.13",
       libraryDependencies ++= Seq(
-        "org.scalaz" %% "scalaz-core" % "7.1.3"
+        "org.scalaz" %% "scalaz-core" % "7.1.4"
       )
     )
   ).dependsOn(
