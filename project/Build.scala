@@ -28,10 +28,9 @@ object Build extends Build {
     base = file(s"$project-scalaz"),
     settings = basicSettings ++ scalapropsWithScalazlaws ++ Seq(
       name := s"$project-scalaz",
-      resolvers += Opts.resolver.sonatypeSnapshots,
-      scalapropsVersion := "0.2.0-SNAPSHOT",
+      scalapropsVersion := "0.2.0",
       libraryDependencies ++= Seq(
-        "org.scalaz" %% "scalaz-core" % "7.2.0-RC1"
+        "org.scalaz" %% "scalaz-core" % "7.2.0"
       )
     )
   ).dependsOn(
