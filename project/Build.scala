@@ -7,8 +7,8 @@ object Build extends Build {
 
   val basicSettings = Seq(
     version := "0.1",
-    scalaVersion := "2.11.7",
-    crossScalaVersions := Seq("2.10.5", "2.11.7")
+    scalaVersion := "2.11.8",
+    crossScalaVersions := Seq("2.10.5", "2.11.8", "2.12.0")
   )
 
   lazy val core = Project(
@@ -17,8 +17,8 @@ object Build extends Build {
     settings = basicSettings ++ Seq(
       name := s"$project-core",
       libraryDependencies ++= Seq(
-        "org.scalatest" %% "scalatest" % "2.2.4" % "test",
-        "org.scalacheck" %% "scalacheck" % "1.12.4" % "test"
+        "org.scalatest" %% "scalatest" % "3.0.1" % "test",
+        "org.scalacheck" %% "scalacheck" % "1.13.4" % "test"
       )
     )
   )
@@ -28,9 +28,9 @@ object Build extends Build {
     base = file(s"$project-scalaz"),
     settings = basicSettings ++ scalapropsWithScalazlaws ++ Seq(
       name := s"$project-scalaz",
-      scalapropsVersion := "0.2.0",
+      scalapropsVersion := "0.3.4",
       libraryDependencies ++= Seq(
-        "org.scalaz" %% "scalaz-core" % "7.2.0"
+        "org.scalaz" %% "scalaz-core" % "7.2.7"
       )
     )
   ).dependsOn(
