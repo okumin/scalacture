@@ -23,7 +23,7 @@ abstract class SeqSpec[A: Arbitrary, CC[X] <: Seq[X] with SeqLike[X, CC[X]] with
   }
 
   "A Seq" should {
-    "be able to seriazlie" in {
+    "be able to serialize" in {
       forAll { elems: List[A] =>
         val seq = factory(elems: _*)
         val outputStream = new ByteArrayOutputStream()
