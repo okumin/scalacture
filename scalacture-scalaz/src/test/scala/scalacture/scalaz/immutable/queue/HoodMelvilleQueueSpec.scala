@@ -3,6 +3,7 @@ package scalacture.scalaz.immutable.queue
 import scalacture.immutable.queue.HoodMelvilleQueue
 import scalacture.scalaz.immutable.queue.hoodMelvilleQueue._
 import scalaprops._
+import scalaprops.ScalapropsScalaz._
 import scalaz.std.anyVal._
 
 object HoodMelvilleQueueSpec extends Scalaprops {

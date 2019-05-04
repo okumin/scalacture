@@ -3,6 +3,7 @@ package scalacture.scalaz.immutable.queue
 import scalacture.immutable.queue.Queue
 import scalacture.scalaz.immutable.queue.queue._
 import scalaprops._
+import scalaprops.ScalapropsScalaz._
 import scalaz.std.anyVal._
 
 object QueueSpec extends Scalaprops {
