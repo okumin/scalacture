@@ -1,5 +1,5 @@
 logLevel := Level.Warn
 
-addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.13.0")
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.9")
 
-addSbtPlugin("com.github.scalaprops" % "sbt-scalaprops" % "0.1.0")
+addSbtPlugin("com.github.scalaprops" % "sbt-scalaprops" % "0.3.1")

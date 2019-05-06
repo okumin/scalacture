@@ -3,6 +3,7 @@ package scalacture.scalaz.immutable.queue
 import scalacture.immutable.queue.BatchedQueue
 import scalacture.scalaz.immutable.queue.batchedQueue._
 import scalaprops._
+import scalaprops.ScalapropsScalaz._
 import scalaz.std.anyVal._
 
 object BatchedQueueSpec extends Scalaprops {
